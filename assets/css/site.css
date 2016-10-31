@@ -1,0 +1,11 @@
+/*自定义全局字体*/
+body,button,input,select,textarea{font:14px/1.8 tahoma,arial,'Microsoft YaHei', \5FAE\8F6F\96C5\9ED1, SimSun, \5b8b\4f53, sans-serif;}
+
+body{
+  background: #e6e6e6;
+  padding-top: 40px;
+}
+
+.navbar-default{ background: #fff; }
+.navbar-default .navbar-nav > li > a{ color: #005776; }
+.navbar-brand{  vertical-align: middle;  padding: 5px 15px;}
