@@ -148,3 +148,42 @@ body{
 
 .liucheng{ height: 200px; background:url(../../img/content/liucheng.png) #febf80 no-repeat center center; }
 .zhuyi{ height: 200px; background:url(../../img/content/zhuyi.png) #92c425 no-repeat center center;  }
+
+.job-block-left{ background-color: #e6e6e6; padding: 10px 20px; margin-top: 20px; }
+.job-block-right{ margin-top: 5px; }
+
+.job-list-head{ border-top: solid #8c9192 2px; height: 40px; line-height: 40px;  font-size: 16px; padding: 5px 0; }
+.job-list-head span{ font-weight: 700;  padding: 0 5px; }
+  .job-name{ }
+  .job-number{ }
+  .job-address{ }
+
+.job-list-item{ margin-bottom: 10px; position: relative;  }
+.job-list-item span{  padding: 0 5px; height: 30px; line-height: 30px; }
+.job-list-item i.iconfont{ color: #8fc31f; position: absolute;  text-align: right; vertical-align: bottom; height: 30px;  right: 0; top:4px;  font-size: 18px; font-weight: 700; cursor: pointer;}
+
+.detail-box{ display: none; position: relative; border: solid 1px #939c9c; padding: 10px 20px; margin-top: 25px;  }
+.item-corner{
+  position: absolute;
+  top: -40px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent; 
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #909596; 
+  border-left: 20px solid transparent; 
+}
+.item-corner-white{
+  position: absolute;
+  font-size: 0;
+  top: -19px;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent; 
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #fff; 
+  border-left: 20px solid transparent; 
+  z-index: 90;
+}

@@ -8,6 +8,7 @@
 
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://t1.chei.com.cn/common/ch/iconfont.css" /> 
     <link href="assets/css/site.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -268,16 +269,83 @@
 
 
 <!-- 岗位列表 -->
-<div class="main-box" >
+<div class="main-box" style="background-color: #fff">
   <div class="container">
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-3">
+    <div class="job-block-left">
     <p class="text-justify">
-      无论您在哪个城市，无论您是专科生、本科生、硕士生，还是博士生，只要您有能力、有魄力、有见识，我们都欢迎您加入大家庭中。
-公司会为每一位员工提供完善的培训体系和晋升空间,具有市场竞争力的薪酬和福利待遇，为员工的职业生涯发展提供广阔的平台和无限的机遇。
+    无论您在哪个城市，无论您是专科生、本科生、硕士生，还是博士生，只要您有能力、有魄力、有见识，我们都欢迎您加入大家庭中。</p>
+   <p class="text-justify">
+   公司会为每一位员工提供完善的培训体系和晋升空间,具有市场竞争力的薪酬和福利待遇，为员工的职业生涯发展提供广阔的平台和无限的机遇。
     </p>
     </div>
-    <div class="col-sm-10">dsaf </div>
+    </div>
+    <div class="col-sm-9">
+     <div class="job-block-right">
+     <div class="row job-list-head">
+       <span class="col-sm-6 job-name">职位名称</span>
+       <span class="col-sm-2 text-center">招聘人数</span>
+       <span class="col-sm-2 text-center">工作地点</span>
+       <span class="col-sm-2 text-center public-time">发布时间</span>
+     </div>
+     <div class="row job-list-item">
+     <span class="col-sm-6 job-name">产品开发/采购（英语方向）</span>
+     <span class="col-sm-2 text-center">99</span>
+     <span class="col-sm-2 text-center">北京</span>
+     <span class="col-sm-2 text-center public-time">2016/11/2</span>
+      <i class="iconfont" title="向上箭头">&#xe600;</i> 
+
+      <div class="col-sm-12 detail-box">
+      <div class="item-corner"><div class="item-corner-white"></div></div>
+        <p>岗位职责</p>
+        <p>
+1.开发适合在电子商务平台,如eBay，Amazon, Aliexpress, Wish等平台销售的热销产品；<br>
+2.负责海外市场调查分析，关键词分析，关注和查看产品在平台上的销售情况与排名情况，撰写
+   产品描述和产品关键词，设定建议销售价格；<br>
+3.负责产品的前期样品采购和登记，做好供应商的收集、归类和评估等；<br>
+4.完成公司规定的开发目标；<br>
+5.配合销售部门做好其他工作。<br>
+</p>
+
+ <p>岗位要求</p>
+ <p>
+1.大学专科及以上学历，相关语言听说读写能力良好；<br>
+2.有较强的跨部门沟通协调管理能力；<br>
+3.热爱电子商务，网购经验丰富，擅于发现新兴事物<br>
+4.对数据比较敏感，善于通过数据分析，了解客户行为和需求；<br>
+5.有实际产品采购和运营相关经验者，有欧美海外工作经验者优先考虑；<br>
+6.学习能力比经验更重要。<br>
+</p>
+      </div>
+     </div>
+
+     <div class="row job-list-item">
+       <span class="col-sm-6 job-name">产品开发/采购（英语方向）</span>
+       <span class="col-sm-2 text-center">3-5</span>
+       <span class="col-sm-2 text-center">北京</span>
+       <span class="col-sm-2 text-center public-time">2016/11/2</span>
+        <i class="iconfont" title="向上箭头">&#xe600;</i> 
+     </div>
+ <div class="row job-list-item">
+       <span class="col-sm-6 job-name">产品开发/采购（英语方向）</span>
+       <span class="col-sm-2 text-center">3-5</span>
+       <span class="col-sm-2 text-center">北京</span>
+       <span class="col-sm-2 text-center public-time">2016/11/2</span>
+        <i class="iconfont" title="向上箭头">&#xe600;</i> 
+     </div>
+ <div class="row job-list-item">
+       <span class="col-sm-6 job-name">产品开发/采购（英语方向）</span>
+       <span class="col-sm-2 text-center">3-5</span>
+       <span class="col-sm-2 text-center">北京</span>
+       <span class="col-sm-2 text-center public-time">2016/11/2</span>
+        <i class="iconfont" title="向上箭头">&#xe600;</i> 
+     </div>
+
+     
+
+     </div>
+     </div>
   </div>
   </div>
 </div>
@@ -297,7 +365,10 @@
     <script>
   $(document).ready(function(){
     $("#sticker").sticky({topSpacing:0,zIndex: 99, responsiveWidth:false});
-    lightbox.option({ albumLabel: '图片： %1 of %2'})
+    $(".job-list-item i.iconfont").bind("click",function(){
+        $(this).siblings(".detail-box").show();
+    });
+     lightbox.option({ albumLabel: '图片： %1 of %2'});
   });
 </script>
 
