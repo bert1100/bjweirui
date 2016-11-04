@@ -187,3 +187,12 @@ body{
   border-left: 20px solid transparent; 
   z-index: 90;
 }
+
+/* 招募类别 */
+.category-list{ list-style: none;  padding: 0; margin-top: 30px;}
+.category-list li{ list-style: none; display: inline-block; margin: 0 80px 20px 20px; width: 100px;  }
+.category-list .category-icon{  }
+.category-list .category-title{  text-align: center; }
+.category-box{
+  text-align: center;
+}
