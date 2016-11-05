@@ -127,7 +127,7 @@ body{
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
-    margin-top: 78px;
+    margin-top: 0px;
   }
   .navbar-wrapper .container {
     padding-right: 15px;
@@ -248,16 +248,16 @@ body{
 
 .color-caret{ position: absolute; width: 0; height: 0; bottom: 0; right: 0;}
 
-.color-box-1 a{ display: block; position:absolute; width: 100%; height: 100%;   background:url(../../img/content/colum-box01.png) no-repeat center center; opacity:1; z-index: 9; }
+.color-box-1 a{ display: block; position:absolute; width: 100%; height: 100%;   background:url(../img/content/colum-box01.png) no-repeat center center; opacity:1; z-index: 9; }
 .color-box-1 a:hover{ background-color:#79a9a6;  }
 
-.color-box-2 a{ display: block; position:absolute; width: 100%; height: 100%;   background:url(../../img/content/colum-box02.png) no-repeat center center; opacity:1; z-index: 9; }
+.color-box-2 a{ display: block; position:absolute; width: 100%; height: 100%;   background:url(../img/content/colum-box02.png) no-repeat center center; opacity:1; z-index: 9; }
 .color-box-2 a:hover{ background-color:#9f84b6;  }
 
-.color-box-3 a{ display: block; position:absolute; width: 100%; height: 100%;   background:url(../../img/content/colum-box03.png) no-repeat center center; opacity:1; z-index: 9; }
+.color-box-3 a{ display: block; position:absolute; width: 100%; height: 100%;   background:url(../img/content/colum-box03.png) no-repeat center center; opacity:1; z-index: 9; }
 .color-box-3 a:hover{ background-color:#b69384;  }
 
-.color-box-4 a{ display: block; position:absolute; width: 100%; height: 100%;   background:url(../../img/content/colum-box04.png) no-repeat center center; opacity:1; z-index: 9; }
+.color-box-4 a{ display: block; position:absolute; width: 100%; height: 100%;   background:url(../img/content/colum-box04.png) no-repeat center center; opacity:1; z-index: 9; }
 .color-box-4 a:hover{ background-color:#b6b584;  }
 
 .color-box-1 .colum-mask{ width: 100%; height: 100%; background: #79a9a6; opacity: 0.6; filter: alpha(opacity=60); z-index: 1;}
@@ -278,7 +278,7 @@ body{
   height: 200px; 
   left: 0;
   top: 0;
-  background:url(../../img/content/liucheng.png) #febf80 no-repeat 50px 35px;
+  background:url(../img/content/liucheng.png) #febf80 no-repeat 50px 35px;
   z-index: 1;
    }
 
@@ -289,7 +289,7 @@ body{
    right: 0;
    top: 0;
    z-index: 1;
-  background:url(../../img/content/zhuyi.png) #92c425 no-repeat 50px 35px;  
+  background:url(../img/content/zhuyi.png) #92c425 no-repeat 50px 35px;  
 }
 
 
@@ -348,7 +348,7 @@ body{
     margin: 0 0 0 60px; 
 
   }
-.category-list a.category-icon{
+.category-icon{
   display: block;
   padding-top: 70px;
   text-align: center;
@@ -363,7 +363,7 @@ body{
   background-position: center -133px;
    }
 
-.category-list span.category-title{  
+ span.category-title{  
   display: table-cell;
     height: 60px;
     width: 100px;
@@ -372,8 +372,29 @@ body{
     font-size: 16px;
     line-height: 20px;
    }
+
 .category-box{
-  text-align: center;
+  margin-left: 200px;
+  height: 130px;
+}
+
+.category-box .category-icon{
+  width: 200px;
+  float: left;
+}
+.category-box  span.category-title{  
+  display: table-cell;
+    height: 60px;
+    width:200px;
+    vertical-align: middle;
+    text-align:center;
+    font-size: 16px;
+    line-height: 20px;
+   }
+.category-box .category-summary{
+  float: left;
+  display: inline;
+  margin-left: 100px;
 }
 .category-title{ display: block; }
 
@@ -414,6 +435,28 @@ body{
     background: url(../images/category-icon/creative-products.png) no-repeat center top;
 }
 
+  .btn-primary {
+        color: #fff;
+        background-color: #8fc31f;
+        border-color: #8fc31f;
+      }
+  .btn-primary:focus,
+ .btn-primary.focus {
+        color: #fff;
+        background-color: #286090;
+        border-color: #286090;
+      }
+     .btn-primary:hover {
+        color: #fff;
+        background-color: #68a33b;
+        border-color: #68a33b;
+      }
+     .btn-primary:active,
+     .btn-primary.active{
+        color: #fff;
+        background-color: #68a33b;
+        border-color: #68a33b;
+      }
 
 /* 联系我们 */
 h2{ font-size: 14px; color: #000;  }
