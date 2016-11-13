@@ -12,12 +12,11 @@ body{
 /*CUSTOMSIZE THE NAVBAR*/
 .navbar-wrapper {
   position: absolute;
-  top: 0;
+  top: 0px;
   right: 0;
   left: 0;
   z-index: 20;
   width: 100%;
-
 }
 
 .navbar-container{
@@ -103,7 +102,7 @@ body{
 /* MAIN  LAYOUT FOR MOST PAGES */
 
 .main-summary {  width: 100%; height: auto; overflow: hidden; position: relative;  }
-.main-box { width: 100%;  }
+.main-box { width: 100%; }
 
 
 /* Featurettes
@@ -241,7 +240,7 @@ body{
 /* 诚聘英才 PAGE*/
 
 .float-title{ position: relative; }
-.float-title h3{ margin-top: -400px; position: absolute; color: #fff; float: left; padding:5px 10px; background-color: #393a39; font-size: 18px; }
+.float-title h3{ margin-top: -400px; position: absolute; color: #e6e6e6; float: left; padding:8px 15px; background-color: #393a39; font-size: 28px; }
 .colum-box{ width: 260px;  display: inline-block; vertical-align: top; margin-right: 20px; }
 .last-one{ margin-right: 0; }
 .colum-box-title{ position: relative; width: 100%; height: 200px;  }
@@ -273,7 +272,7 @@ body{
 .color-box-4 .color-caret{  border-bottom:  40px solid #b6b584; border-top: 40px solid transparent; border-left: 40px solid transparent;   }
 
 .toggle-box{ position: relative;}
-.center-box{ padding: 0 250px; }
+.center-box{ padding: 0 200px; font-size: 16px }
 .liucheng{
   position: absolute;
   width: 180px;
@@ -355,7 +354,7 @@ body{
 .step-box{
   width: 211px;
   height: 122px;
-  padding: 15px 30px 15px 20px;
+  padding: 15px 20px 15px 20px;
   overflow: hidden;
   text-align: center;
   vertical-align: middle;
@@ -396,20 +395,28 @@ body{
 
 
 
-.job-block-left{ background-color: #e6e6e6; padding: 10px 20px; margin-top: 20px; }
+.job-block-left{ background-color: #e6e6e6; padding: 10px 20px; margin-top: 20px; font-size: 16px; }
 .job-block-right{ margin-top: 5px; }
 
-.job-list-head{ border-top: solid #8c9192 2px; height: 40px; line-height: 40px;  font-size: 16px; padding: 5px 0; }
+.email-label{ padding: 10px 10px 10px 60px; background: url(../images/email.png) no-repeat left center ; }
+.fax-label{  padding: 10px 10px 10px 60px; background: url(../images/fax.png) no-repeat left center ; }
+.tel-label{ padding: 10px 10px 10px 60px; background: url(../images/tel.png) no-repeat left center ; }
+.address-label{  padding: 10px 10px 10px 60px; background: url(../images/address.png) no-repeat left center ; }
+
+
+
+.job-list-head{ border-top: solid #939c9c 2px; height: 40px; line-height: 40px;  font-size: 16px; padding: 5px 0; }
 .job-list-head span{ font-weight: 700;  padding: 0 5px; }
   .job-name{ }
   .job-number{ }
   .job-address{ }
 
-.job-list-item{ margin-bottom: 10px; position: relative;  }
+.job-list-item{ margin-bottom: 10px; position: relative;  font-size: 16px; }
+.job-list-item .job-name:hover{  text-decoration: underline; cursor: pointer; }
 .job-list-item span{  padding: 0 5px; height: 30px; line-height: 30px; }
-.job-list-item i.iconfont{ color: #8fc31f; position: absolute;  text-align: right; vertical-align: bottom; height: 30px;  right: 0; top:4px;  font-size: 18px; font-weight: 700; cursor: pointer;}
+.job-list-item span.glyphicon{ color: #8fc31f; position: absolute;  text-align: right; vertical-align: bottom; height: 30px;  right: -10px; top:4px;  font-size: 18px; font-weight: 700; cursor: pointer; line-height: 24px;}
 
-.detail-box{ display: none; position: relative; border: solid 1px #939c9c; padding: 10px 20px; margin-top: 25px;  }
+.detail-box{  display: none; position: relative; border: solid 1px #939c9c; padding: 10px 20px; margin-top: 25px;  }
 .item-corner{
   position: absolute;
   top: -40px;
@@ -559,12 +566,12 @@ body{
      .btn-primary:active,
      .btn-primary.active{
         color: #fff;
-        background-color: #68a33b;
-        border-color: #68a33b;
+        background-color: #8fc31f;
+        border-color: #8fc31f;
       }
 
 /* 联系我们 */
-h2{ font-size: 14px; color: #000;  }
+h2{ font-size: 16px; color: #000;  }
 .map-container{ position: relative;  width: 1140px; }
 .map-mask{ position: absolute; left: 0; top: 0; width: 1140px; height: 90px;  background: #f8d9b7; opacity: 0.6; filter: alpha(opacity=60);  z-index: 1; }
 .map-mask-icon{position: absolute; left: 0; top: 0; width: 1140px; height: 90px; background: url(../images/map-mask-icon.png) no-repeat center center; z-index: 5;}

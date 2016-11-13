@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>北京威锐科技公司</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/site.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" /> 
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/site.css" rel="stylesheet">
     <style>
       /*INDEX CUSTEM STYLE ---CUSTOMIZE THE CAROUSEL */
       body{ padding-bottom: 0; }
+      /*just for index*/
+      .navbar-wrapper {
+        position: absolute;
+        top: 50px;
+      }
       /* Carousel base class */
       .carousel {
         height: 759px;
@@ -22,6 +27,12 @@
         z-index: 10;
         top: 340px;
         bottom: auto;
+      }
+      .carousel-caption h1{
+      	font-size: 24px;
+      }
+      .carousel-caption p{
+      	font-size: 14px;
       }
 
       /* Declare heights because of positioning of img element */
@@ -85,14 +96,14 @@
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
            </button>
-           <a class="navbar-brand" href="#"><img src="images/logo.png" alt="北京威锐" height="40"></a>
+           <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="北京威锐" height="40"></a>
          </div>
 
          <!-- Collect the nav links, forms, and other content for toggling -->
          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
            <ul class="nav navbar-nav navbar-right">
               <li class="active">
-               <a href="#">公司首页 </a>
+               <a href="/">公司首页 </a>
             <!--    不再拥有
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">公司首页 </a>
             <ul class="dropdown-menu">
@@ -102,10 +113,10 @@
                  <li><a href="#">业务范畴</a></li>
                </ul> -->
              </li>
-             <li><a href="#">环球新闻</a></li>
-             <li><a href="#">供应商招募</a></li>
-             <li><a href="#">诚聘英才</a></li>
-             <li><a href="#">联系我们</a></li>
+             <li><a href="/news">环球新闻</a></li>
+             <li><a href="/recruit">供应商招募</a></li>
+             <li><a href="/jobs">诚聘英才</a></li>
+             <li><a href="/contact">联系我们</a></li>
             
            </ul>
         
@@ -120,12 +131,13 @@
      <div class="carousel-inner" >
         <div class="item active">
           <div class="item-mask"></div>
-          <img class="first-slide " src="images/tiny.jpg" alt="First slide">
+          <img class="first-slide " src="/images/tiny.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline---测试.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">READ MORE</a></p>
+              <h1>北京威锐科技有限公司</h1>
+              <p>美国威锐控股的旗下中国成员公司，在跨境电子商务行业具有一定的影响力。威锐科技坚持“以人为本”的管理理念<br>
+以“快乐生活，快乐工作”为准则，拥有一支非常年轻活跃的管理团队，创造了一个充满活力、和谐的团队氛围和良好的发展空间……</p>
+              <p><a class="btn btn-lg btn-primary" href="/info/" role="button">Read More</a></p>
             </div>
           </div>
         </div>
@@ -133,9 +145,9 @@
   </div>
 
 
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.sticky.js"></script>
     <script>
   $(document).ready(function(){
     $("#sticker").sticky({topSpacing:0,zIndex: 99});
