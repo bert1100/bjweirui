@@ -14,18 +14,18 @@
       /*just for index*/
       .navbar-wrapper {
         position: absolute;
-        top: 50px;
+        top: 0px;
       }
       /* Carousel base class */
       .carousel {
-        height: 759px;
+        /*height: 759px;*/
         /*margin-bottom: 60px;*/
         overflow: hidden;
       }
       /* Since positioning the image, we need to help out the caption */
       .carousel-caption {
         z-index: 10;
-        top: 340px;
+        top: 200px;
         bottom: auto;
       }
       .carousel-caption h1{
@@ -37,7 +37,7 @@
 
       /* Declare heights because of positioning of img element */
       .carousel .item {
-        height: 759px;
+        /*height: 759px;*/
         background-color: #777;
       }
 
@@ -47,7 +47,8 @@
         left: 0;
         background-color: #0e5369;
         min-width: 100%;
-        height: 759px;  /*暂定*/
+        height: 100%;
+        /*height: 759px;  /*暂定*/
         opacity: .86;
         filter: alpha(opacity=0.86);
       }
@@ -96,7 +97,7 @@
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
            </button>
-           <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="北京威锐" height="40"></a>
+           <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="北京威锐" height="40"></a>
          </div>
 
          <!-- Collect the nav links, forms, and other content for toggling -->
@@ -131,13 +132,13 @@
      <div class="carousel-inner" >
         <div class="item active">
           <div class="item-mask"></div>
-          <img class="first-slide " src="/images/tiny.jpg" alt="First slide">
+          <img class="first-slide " src="/images/tiny.jpg" width="1920" height="750" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>北京威锐科技有限公司</h1>
               <p>美国威锐控股的旗下中国成员公司，在跨境电子商务行业具有一定的影响力。威锐科技坚持“以人为本”的管理理念<br>
 以“快乐生活，快乐工作”为准则，拥有一支非常年轻活跃的管理团队，创造了一个充满活力、和谐的团队氛围和良好的发展空间……</p>
-              <p><a class="btn btn-lg btn-primary" href="/info/" role="button">Read More</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#info" role="button">Read More</a></p>
             </div>
           </div>
         </div>
@@ -145,14 +146,248 @@
   </div>
 
 
+<div id="info" class="main-box" style="margin-top: 10px; padding-bottom: 30px;">
+        <div class="container">
+            <h3 class="part-title" >公司简介</h3>
+            <div class="row" style="margin-top:50px;">
+                <div class="col-sm-6">
+                    <p> <span style="color:#f39800; font-size: 18px;">北京威锐科技有限公司</span>（以下简称：威锐科技）是中国新一代海外电子商务的开拓者，致力于创建国内一流的跨境在线电子商务平台。通过整合国内出口型产品的电子商务在线模式，精准把握全球中小型批发、零售的新趋势和新动态，本着“引领潮流，精准营销，速达全球，全程服务”的服务宗旨，以高品质的产品优势和高效的国际物流体系，为顾客提供更优、更快、更便捷的网购服务。</p>
+                    <p>
+                        威锐科技成立于2010年，主要从事跨境电子商务。以电子，汽配，家居等产品为主，产品主要出口到欧洲，美洲及澳洲等发达国家。公司经理以及部门主管都有5年及以上的ebay和B2C外贸网站工作经验，通过我们拥有的宝贵经验、不懈的努力和可用于发展的资金及这个行业的发展前景，对公司的发展制定了较为实际的长远规划。每年营业额增长率约200%，2014年6月获邀参加eBay青岛卖家峰会。</p>
+                </div>
+                <div class="col-sm-6">
+                <div style="width: 500px; height: 333px; overflow: hidden;">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+
+                        <div class="item active">
+                          <img src="/img/info/info-01.jpg" alt="">
+                        </div>
+
+                        <div class="item">
+                         <img src="/img/info/info-02.jpg" alt="">
+                        </div>
+
+                        <div class="item">
+                         <img src="/img/info/info-03.jpg" alt="">
+                        </div>
+
+                        <div class="item">
+                         <img src="/img/info/info-04.jpg" alt="">
+                        </div>
+
+                        <div class="item">
+                         <img src="/img/info/info-05.jpg" alt="">
+                        </div>
+
+                        <div class="item">
+                         <img src="/img/info/info-06.jpg" alt="">
+                        </div>
+                      
+                      </div>
+
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-box" style="background-color: #fff">
+        <div class="container">
+            <h3 class="part-title">企业文化</h3>
+            <div class="row" id="culture-tabs">
+                <div class="col-sm-3">
+                    <a href="javascript:void(0);"><span class="icon realistic-innovative"></span>求实创新</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="javascript:void(0);"><span class="icon inclusive-sharing"></span>包容分享</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="javascript:void(0);"><span class="icon win-cooperation"></span>合作双赢</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="javascript:void(0);"><span class="icon achievement-future"></span>成就未来</a>
+                </div>
+            </div>
+            <div class="company-culture-content ">
+                <div class="tab-culture active">
+                    公司本着严谨认真的工作态度、以先进的技术为底蕴
+                    <br> 开阔视野，积极创新
+                    <br> 致力于打造成为国内一流的跨国在线电子商务平台和全球大型综合网上商城
+                    <br> 成功跻身国际电子商务领军者
+                    <br>
+                </div>
+                <div class="tab-culture" style="display: none;">
+                    威锐实行包容开放式管理<br>
+公司鼓励员工大胆尝试、鼓励员工分享交流服务理念与工作心得，相互激励鼓舞<br>
+公司非常重视人才培养，经常进行内部培训<br>
+不定期聘请外部培训机构为员工传授最前沿的电子商务技术与资讯，共同分享共同进步<br>
+                </div>
+                <div class="tab-culture" style="display: none;">
+                经过数年时间的积累与积淀，威锐正处于高速发展的阶段<br>
+                威锐一直以双赢的理念与威锐人共同努力<br>
+                积极寻求以更好的服务与广大国内供应商合作<br>
+                实现共同发展，共赢明天<br>
+                </div>
+                <div class="tab-culture" style="display: none;">
+                    公司本着“以人为本”的人文理念<br>
+                    为了共同目标和远景与威锐同心协力同甘共苦的威锐人充分提供广阔的发展平台<br>
+                    只要你有能力，有梦想，有激情<br>
+                    一定会在这里通过你的努力实现你人生的价值，成就你璀璨的未来<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-box" style="padding-bottom: 30px;">
+        <div class="container">
+            <h3 class="part-title">业务范围</h3>
+            <div class="business-scope-content">
+                威锐科技已经在<span style="color:#f39800;">美国、日本、英国、香港</span>等世界主要发达国家和地区设有运营中心
+                <br> 并在北美和欧洲等地设立物流仓储中心
+                <br> 丰富的产品线、迅疾的物流以及完善的售后服务
+                <br> 有力地保障了全线产品在<span style="color:#f39800;">英语、法语、德语，俄语，日语、西班牙语、葡萄牙语</span>等多个语系国家的畅销
+                <br> 并在海外市场获得了良好的口碑和信誉
+                <br> 我们期待通过全员的精诚合作和共同开拓，努力将公司建设成为电子商务领域最优秀的企业之一，满载全体威锐人的激情与梦想走向更大的成功
+            </div>
+            <div class="pull-left business-img-box">
+                <img src="/img/profile-img01.jpg" class="business-img" alt="">
+                <div class="text-box">
+                    <h4>威锐贸易株式会社 </h4>
+                    <p class="text-jusify">威锐贸易株式会社是北京威锐科技有限公司下属的日本分公司，位于日本埼玉县埼玉市南区。主要负责日本市场销售中日进出口贸易和日本国内发货业务。</p>
+                </div>
+            </div>
+            <div class="pull-right business-img-box">
+                <img src="/img/profile-img02.jpg" class="business-img" alt="">
+                <div class="text-box">
+                    <h4>深圳威锐无限贸易有限公司 </h4>
+                    <p class="text-jusify">深圳威锐无限贸易有限公司是北京威锐科技有限公司下属的仓储物流中心，位于深圳市龙岗区坂田街道。主要负责北京威锐科技有限公司产品采购，仓储和产品发货业务。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- footer  start -->
+    <div id="footer" class="main-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="foot-address">
+                        北京市通州区台湖镇
+                        <br> 经略天则北 5-05 号楼
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="foot-tel">
+                        010-69509920
+                        <br> 010-69509960
+                        <br> 010-69509970
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="foot-copyright">
+                        Copyright 2010-2016. 威锐科技.
+                        <br> All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer  end -->
+    <!-- lightbox js -->
     <script src="/js/jquery-1.12.4.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/jquery.sticky.js"></script>
+    <script src="/js/lightbox.js"></script>
     <script>
-  $(document).ready(function(){
-    $("#sticker").sticky({topSpacing:0,zIndex: 99});
-  });
-</script>
+    $(document).ready(function() {
+        $("#sticker").sticky({
+            topSpacing: 0,
+            zIndex: 99,
+            responsiveWidth: false
+        });
+
+        // 企业文化tab
+        $("#culture-tabs>div").bind("mouseenter", function() {
+            var _index = $(this).index();
+            $(".tab-culture").hide().eq(_index).show();
+        })
+        $("div.business-img-box").hover(function() {
+            $(this).find("div.text-box").fadeIn();
+        }, function() {
+            $(this).find("div.text-box").fadeOut();
+        });
+
+        // 招聘须知
+        $(".liucheng, .zhuyi").bind({
+            "mouseenter": function(event) {
+                if ($(this).data("flag")) {
+                    return;
+                }
+                event.stopPropagation();
+                $(this).data("flag", true).css({
+                    "z-index": 3
+                }).animate({
+                    width: "1100px",
+                    height: "600px"
+                }, 600);
+                $(".toggle-box").animate({
+                    height: "600px"
+                }, 600);
+            },
+            "mouseleave": function(event) {
+                event.stopPropagation();
+                $(this).removeData("flag").css({
+                    "z-index": 1
+                }).animate({
+                    width: "200px",
+                    height: "200px"
+                }, 600);
+                $(".toggle-box").animate({
+                    height: "200px"
+                }, 600);
+            },
+        })
+
+        $('#myTab a').click(function(e) {
+                e.preventDefault()
+                $(this).tab('show')
+            })
+            // 职位列表
+        $(".job-list-item i.iconfont").bind("click", function() {
+            $(this).siblings(".detail-box").show();
+        });
+
+        lightbox.option({
+            albumLabel: '图片： %1  / %2'
+        });
+
+    });
+    </script>
+
 
   </body>
 </html>

@@ -120,6 +120,7 @@ body{
 }
 
 
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -158,7 +159,8 @@ body{
 
 
 /* 个性化元素  */
-
+/*强制 1170 */
+.container{ width: 1170px; }
 /* 公司简介 PAGE */
 
 .part-title{ 
@@ -572,6 +574,7 @@ body{
 
 /* 联系我们 */
 h2{ font-size: 16px; color: #000;  }
-.map-container{ position: relative;  width: 1140px; }
-.map-mask{ position: absolute; left: 0; top: 0; width: 1140px; height: 90px;  background: #f8d9b7; opacity: 0.6; filter: alpha(opacity=60);  z-index: 1; }
-.map-mask-icon{position: absolute; left: 0; top: 0; width: 1140px; height: 90px; background: url(../images/map-mask-icon.png) no-repeat center center; z-index: 5;}
+.contact-info{ line-height: 1.8em; }
+.map-container{ position: relative;  width: 100%; margin:0 auto; }
+.map-mask{ position: absolute; left: 0; top: 0; width: 100%; height: 90px;  background: #f8d9b7; opacity: 0.6; filter: alpha(opacity=60);  z-index: 1; }
+.map-mask-icon{position: absolute; left: 0; top: 0; width: 100%; height: 90px; background: url(../images/map-mask-icon.png) no-repeat center center; z-index: 5;}
