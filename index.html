@@ -10,37 +10,10 @@
     <link href="/css/site.css" rel="stylesheet">
     <style>
       /*INDEX CUSTEM STYLE ---CUSTOMIZE THE CAROUSEL */
-      body{ padding-bottom: 0; }
-      /*just for index*/
-      .navbar-wrapper {
-        position: absolute;
-        top: 0px;
-      }
+      body{ padding-top: 50px; padding-bottom: 0; }
+  
       /* Carousel base class */
-      .carousel {
-        /*height: 759px;*/
-        /*margin-bottom: 60px;*/
-        overflow: hidden;
-      }
-      /* Since positioning the image, we need to help out the caption */
-      .carousel-caption {
-        z-index: 10;
-        top: 200px;
-        bottom: auto;
-      }
-      .carousel-caption h1{
-      	font-size: 24px;
-      }
-      .carousel-caption p{
-      	font-size: 14px;
-      }
-
       /* Declare heights because of positioning of img element */
-      .carousel .item {
-        /*height: 759px;*/
-        background-color: #777;
-      }
-
       .carousel-inner > .item >.item-mask{
         position: absolute;
         top: 0;
@@ -48,33 +21,10 @@
         background-color: #0e5369;
         min-width: 100%;
         height: 100%;
-        /*height: 759px;  /*暂定*/
         opacity: .86;
         filter: alpha(opacity=0.86);
       }
-      /* CUSTOM BUTTON STYLE FOR PRIMARY BUTTON */
-      .carousel-inner .btn-primary {
-        color: #fff;
-        background-color: #617c84;
-        border-color: #617c84;
-      }
-      .carousel-inner .btn-primary:focus,
-      .carousel-inner .btn-primary.focus {
-        color: #fff;
-        background-color: #286090;
-        border-color: #286090;
-      }
-      .carousel-inner .btn-primary:hover {
-        color: #fff;
-        background-color: #68a33b;
-        border-color: #68a33b;
-      }
-      .carousel-inner .btn-primary:active,
-      .carousel-inner .btn-primary.active{
-        color: #fff;
-        background-color: #68a33b;
-        border-color: #68a33b;
-      }
+     
 
 
     </style>
@@ -85,9 +35,8 @@
   </head>
   <body>
  <!-- 导航条 -->
- <div class="navbar-wrapper">
-   <div class="navbar-container"  id="sticker">
-     <nav class="navbar navbar-default navbar-static-top">
+
+     <nav class="navbar navbar-default navbar-fixed-top">
        <div class="container">
          <!-- Brand and toggle get grouped for better mobile display -->
          <div class="navbar-header">
@@ -125,20 +74,15 @@
          </div><!-- /.navbar-collapse -->
        </div><!-- /.container -->
        </nav>
-   </div>
- </div>
+
 
   <div class="carousel">
      <div class="carousel-inner" >
         <div class="item active">
-          <div class="item-mask"></div>
-          <img class="first-slide " src="/images/tiny.jpg" width="1920" height="750" alt="First slide">
+          <img class="first-slide " src="/img/summary/index-tiny.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>北京威锐科技有限公司</h1>
-              <p>美国威锐控股的旗下中国成员公司，在跨境电子商务行业具有一定的影响力。威锐科技坚持“以人为本”的管理理念<br>
-以“快乐生活，快乐工作”为准则，拥有一支非常年轻活跃的管理团队，创造了一个充满活力、和谐的团队氛围和良好的发展空间……</p>
-              <p><a class="btn btn-lg btn-primary" href="#info" role="button">Read More</a></p>
+              <img src="/images/company-title.png">
             </div>
           </div>
         </div>
@@ -324,11 +268,6 @@
     <script src="/js/lightbox.js"></script>
     <script>
     $(document).ready(function() {
-        $("#sticker").sticky({
-            topSpacing: 0,
-            zIndex: 99,
-            responsiveWidth: false
-        });
 
         // 企业文化tab
         $("#culture-tabs>div").bind("mouseenter", function() {
