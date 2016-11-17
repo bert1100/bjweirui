@@ -17,9 +17,7 @@
 
 <body>
     <!-- 导航条 -->
-    <div class="navbar-wrapper">
-        <div class="navbar-container" id="sticker">
-            <nav class="navbar navbar-default navbar-static-top">
+             <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -45,7 +43,7 @@
                      <li><a href="#">业务范畴</a></li>
                    </ul> -->
                             </li>
-                            <li><a href="/news">环球新闻</a></li>
+                            <li><a href="/news">公司动态</a></li>
                             <li><a href="/recruit">供应商招募</a></li>
                             <li class="active"><a href="/jobs">诚聘英才</a></li>
                             <li><a href="/contact">联系我们</a></li>
@@ -55,21 +53,26 @@
                 </div>
                 <!-- /.container -->
             </nav>
-        </div>
-    </div>
-    <div class="main-summary">
-        <!-- 所有页面的背景图在此位置 -->
-        <img src="/img/summary/fl-tiny.jpg" width="100%" alt="">
-    </div>
+
+
+            <!-- banner -->
+             <div class="jumbotron jobs-banner">
+             <div class="container">
+              <h1 class="page-title">福利待遇</h1> 
+             </div>
+             </div>
+ 
+
+
+
+ 
     <!-- 诚聘英才  -->
-    <!-- 浮动标题 -->
-    <div class="container float-title">
-        <h3>福利待遇</h3></div>
-    <div class="main-box" style="margin-top:-200px;">
+
+    <div class="main-box">
         <div class="container">
             <div class="colum-box color-box-1">
                 <div class="colum-box-title">
-                    <a href="#" title="五险一金"></a>
+                    <a href="javascript:void(0);" title="五险一金"></a>
                     <div class="colum-mask"></div>
                 </div>
                 <div class="colum-box-content">
@@ -86,7 +89,24 @@
             </div>
             <div class="colum-box color-box-2">
                 <div class="colum-box-title">
-                    <a href="#" title="工作环境"></a>
+
+                     <a href="/img/jobs/1.jpg" data-lightbox="image-1"  title="工作环境"></a> 
+                    <span class="hide"> 
+                     <a href="/img/jobs/2.jpg" data-lightbox="image-1" data-title="" ></a>
+                     <a href="/img/jobs/3.jpg" data-lightbox="image-1" data-title=""></a>
+                     <a href="/img/jobs/4.jpg" data-lightbox="image-1" data-title=""></a>
+                     <a href="/img/jobs/5.jpg" data-lightbox="image-1" data-title=""></a>
+                     <a href="/img/jobs/6.jpg" data-lightbox="image-1" data-title=""></a>
+                     <a href="/img/jobs/7.jpg" data-lightbox="image-1" data-title=""></a>
+                     <a href="/img/jobs/8.jpg" data-lightbox="image-1" data-title=""></a>
+                     <a href="/img/jobs/9.jpg" data-lightbox="image-1" data-title=""></a>
+                     <a href="/img/jobs/10.jpg" data-lightbox="image-1" data-title=""></a>
+                     <a href="/img/jobs/11.jpg" data-lightbox="image-1" data-title=""></a>
+                     <a href="/img/jobs/12.jpg" data-lightbox="image-1" data-title=""></a>
+                     <a href="/img/jobs/13.jpg" data-lightbox="image-1" data-title=""></a>
+                     <a href="/img/jobs/14.jpg" data-lightbox="image-1" data-title=""></a>
+                    </span>
+
                     <div class="colum-mask"></div>
                 </div>
                 <div class="colum-box-content">
@@ -98,8 +118,21 @@
             </div>
             <div class="colum-box color-box-3">
                 <div class="colum-box-title">
-                    <a href="http://j.map.baidu.com/FMKlC" target="_blank" title="班车服务"></a>
-                    <div class="colum-mask"></div>
+                 <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg"  title="班车服务" style="border: 0;"></a>
+                  <div class="colum-mask"></div>
+                    <!-- 班车start -->
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                       
+                        <a href="http://j.map.baidu.com/FMKlC" target="_blank" title="班车服务" style="border: 0;">
+                          <img src="/img/jobs/bus-line.jpg" width="800" border="0" alt="班车路线">
+                          </a>
+                       
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 班车 end -->
                 </div>
                 <div class="colum-box-content">
                     <p class="text-justify">
@@ -110,7 +143,7 @@
             </div>
             <div class="colum-box last-one color-box-4">
                 <div class="colum-box-title">
-                    <a href="#" title="临时宿舍"></a>
+                    <a href="javascript:void(0);" title="临时宿舍"></a>
                     <div class="colum-mask"></div>
                 </div>
                 <div class="colum-box-content">

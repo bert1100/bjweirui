@@ -8,26 +8,6 @@
     <link rel="shortcut icon" href="/favicon.ico" /> 
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/site.css" rel="stylesheet">
-    <style>
-      /*INDEX CUSTEM STYLE ---CUSTOMIZE THE CAROUSEL */
-      body{ padding-top: 50px; padding-bottom: 0; }
-  
-      /* Carousel base class */
-      /* Declare heights because of positioning of img element */
-      .carousel-inner > .item >.item-mask{
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: #0e5369;
-        min-width: 100%;
-        height: 100%;
-        opacity: .86;
-        filter: alpha(opacity=0.86);
-      }
-     
-
-
-    </style>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -63,7 +43,7 @@
                  <li><a href="#">业务范畴</a></li>
                </ul> -->
              </li>
-             <li><a href="/news">环球新闻</a></li>
+             <li><a href="/news">公司动态</a></li>
              <li><a href="/recruit">供应商招募</a></li>
              <li><a href="/jobs">诚聘英才</a></li>
              <li><a href="/contact">联系我们</a></li>
@@ -75,19 +55,15 @@
        </div><!-- /.container -->
        </nav>
 
+       <!-- 首页summary -->
+       <div class="jumbotron index-banner">
+         <p class="text-center">
+         <img src="/images/company-title.png">
+         </p>
+       </div>
 
-  <div class="carousel">
-     <div class="carousel-inner" >
-        <div class="item active">
-          <img class="first-slide " src="/img/summary/index-tiny.jpg" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <img src="/images/company-title.png">
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
+
+
 
 
 <div id="info" class="main-box" style="margin-top: 10px; padding-bottom: 30px;">
@@ -116,6 +92,10 @@
                       <div class="carousel-inner" role="listbox">
 
                         <div class="item active">
+                         <img src="/img/info/info-00.jpg" alt="">
+                        </div>
+
+                        <div class="item">
                           <img src="/img/info/info-01.jpg" alt="">
                         </div>
 
@@ -135,9 +115,7 @@
                          <img src="/img/info/info-05.jpg" alt="">
                         </div>
 
-                        <div class="item">
-                         <img src="/img/info/info-06.jpg" alt="">
-                        </div>
+                       
                       
                       </div>
 
@@ -174,7 +152,7 @@
                     <a href="javascript:void(0);"><span class="icon achievement-future"></span>成就未来</a>
                 </div>
             </div>
-            <div class="company-culture-content ">
+            <div class="company-culture-content col-sm-offset-4">
                 <div class="tab-culture active">
                     公司本着严谨认真的工作态度、以先进的技术为底蕴
                     <br> 开阔视野，积极创新
@@ -206,13 +184,13 @@
     <div class="main-box" style="padding-bottom: 30px;">
         <div class="container">
             <h3 class="part-title">业务范围</h3>
-            <div class="business-scope-content">
-                威锐科技已经在<span style="color:#f39800;">美国、日本、英国、香港</span>等世界主要发达国家和地区设有运营中心
-                <br> 并在北美和欧洲等地设立物流仓储中心
-                <br> 丰富的产品线、迅疾的物流以及完善的售后服务
-                <br> 有力地保障了全线产品在<span style="color:#f39800;">英语、法语、德语，俄语，日语、西班牙语、葡萄牙语</span>等多个语系国家的畅销
-                <br> 并在海外市场获得了良好的口碑和信誉
-                <br> 我们期待通过全员的精诚合作和共同开拓，努力将公司建设成为电子商务领域最优秀的企业之一，满载全体威锐人的激情与梦想走向更大的成功
+            <div class="text-jusify">
+                威锐科技已经在<span style="color:#f39800;">美国、日本、英国、香港</span>等世界主要发达国家和地区设有运营中心，
+                并在北美和欧洲等地设立物流仓储中心，
+                丰富的产品线、迅疾的物流以及完善的售后服务，
+                有力地保障了全线产品在<span style="color:#f39800;">英语、法语、德语，俄语，日语、西班牙语、葡萄牙语</span>等多个语系国家的畅销，
+                并在海外市场获得了良好的口碑和信誉。
+                我们期待通过全员的精诚合作和共同开拓，努力将公司建设成为电子商务领域最优秀的企业之一，满载全体威锐人的激情与梦想走向更大的成功。
             </div>
             <div class="pull-left business-img-box">
                 <img src="/img/profile-img01.jpg" class="business-img" alt="">
@@ -272,44 +250,17 @@
         // 企业文化tab
         $("#culture-tabs>div").bind("mouseenter", function() {
             var _index = $(this).index();
+            $(this).addClass("active").siblings().removeClass("active");
             $(".tab-culture").hide().eq(_index).show();
         })
+
         $("div.business-img-box").hover(function() {
             $(this).find("div.text-box").fadeIn();
         }, function() {
             $(this).find("div.text-box").fadeOut();
         });
 
-        // 招聘须知
-        $(".liucheng, .zhuyi").bind({
-            "mouseenter": function(event) {
-                if ($(this).data("flag")) {
-                    return;
-                }
-                event.stopPropagation();
-                $(this).data("flag", true).css({
-                    "z-index": 3
-                }).animate({
-                    width: "1100px",
-                    height: "600px"
-                }, 600);
-                $(".toggle-box").animate({
-                    height: "600px"
-                }, 600);
-            },
-            "mouseleave": function(event) {
-                event.stopPropagation();
-                $(this).removeData("flag").css({
-                    "z-index": 1
-                }).animate({
-                    width: "200px",
-                    height: "200px"
-                }, 600);
-                $(".toggle-box").animate({
-                    height: "200px"
-                }, 600);
-            },
-        })
+       
 
         $('#myTab a').click(function(e) {
                 e.preventDefault()

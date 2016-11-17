@@ -5,9 +5,11 @@ body,button,input,select,textarea{font:14px/1.8 tahoma,arial,'Microsoft YaHei', 
 
 body{
   background: #e6e6e6;
+  padding-top: 50px;
   padding-bottom: 0px;
   color: #5a5a5a;
 }
+
 
 /*CUSTOMSIZE THE NAVBAR*/
 .navbar-wrapper {
@@ -59,22 +61,31 @@ body{
   padding-bottom: 0px;
 }
 
- .dropdown-menu{
-  background: transparent; 
-  border: none;
-  box-shadow:none;
-  min-width:100px;
+
+
+/* 各个页面banner */
+
+
+.index-banner{
+  background: #fff url(../img/summary/index-tiny.jpg) center center no-repeat;
 }
 
-/*.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
- }
- .dropdown .dropdown-menu {
-    display: block;
-    margin-top: 0;
- }*/
+.news-banner{
+  background: #fff url(../img/summary/news-tiny.jpg) center center no-repeat;
+}
+.recruit-banner{
+   background: #fff url(../img/summary/recruit-tiny.jpg) center center no-repeat;
+}
+.jobs-banner{
+   background: #fff url(../img/summary/jobs-tiny.jpg) center center no-repeat;
+}
+.contact-banner{
+   background: #fff url(../img/summary/contact-tiny.jpg) center center no-repeat;
+}
 
+h1.page-title{ color: #e6e6e6; display: inline-block; padding:8px 15px; background-color: #393a39; font-size: 22px;  }
+
+/* footer */
 #footer{ background: #005776; padding: 20px 0; color: #fff; letter-spacing: 1px; }
 .foot-address{
   font-size: 14px;
@@ -169,7 +180,6 @@ body{
  }
 
 .company-culture-content{ 
-  text-align: center; 
   padding: 50px 0;
   height: 200px;
    }
@@ -189,7 +199,7 @@ body{
   margin-bottom: 54px;
 }
 #culture-tabs a:hover{ text-decoration: none; }
-#culture-tabs a:hover span.icon{ 
+#culture-tabs .active span.icon, #culture-tabs a:hover span.icon{ 
   background-position: center -129px;
    }
     /* 公司简介 -求实创新 */
@@ -209,7 +219,6 @@ body{
       background:url(../images/culture-icon/achievement-future.png) no-repeat center top;
     }
 
-.business-scope-content{ text-align: center; }
 .business-img-box { 
   float: left;
   width: 550px;
