@@ -7,6 +7,7 @@
     <title>北京威锐科技公司</title>
     <link rel="shortcut icon" href="/favicon.ico" /> 
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/vegas.min.css" rel="stylesheet">
     <link href="/css/site.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -55,14 +56,20 @@
        </div><!-- /.container -->
        </nav>
 
-       <!-- 首页summary -->
-       <div class="jumbotron index-banner">
-         <p class="text-center">
-         <img src="/images/company-title.png">
-         </p>
-       </div>
 
 
+<!-- Home section -->
+
+<section id="home">
+  <div class="overlay"></div>
+<div class="backgroud-home">
+    <img src="/images/company-title.png" width="230">
+</div>
+
+</section>
+
+
+    
 
 
 
@@ -242,10 +249,26 @@
     <!-- lightbox js -->
     <script src="/js/jquery-1.12.4.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/vegas.min.js"></script>
     <script src="/js/jquery.sticky.js"></script>
     <script src="/js/lightbox.js"></script>
+
     <script>
     $(document).ready(function() {
+
+      /* Home Slideshow Vegas
+       -----------------------------------------------*/
+       $(function() {
+         $('#home').vegas({
+             slides: [
+                 { src: '/img/summary/background-index.jpg' }
+             ],
+             valign:"center",
+             timer: false,
+             transition: [ 'zoomIn', ],
+             animation: ['kenburns']
+         });
+       });
 
         // 企业文化tab
         $("#culture-tabs>div").bind("mouseenter", function() {
@@ -262,15 +285,7 @@
 
        
 
-        $('#myTab a').click(function(e) {
-                e.preventDefault()
-                $(this).tab('show')
-            })
-            // 职位列表
-        $(".job-list-item i.iconfont").bind("click", function() {
-            $(this).siblings(".detail-box").show();
-        });
-
+  
         lightbox.option({
             albumLabel: '图片： %1  / %2'
         });
