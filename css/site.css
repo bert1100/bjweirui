@@ -441,10 +441,10 @@ h1.page-title{ color: #e6e6e6; display: inline-block; padding:8px 15px; backgrou
 .job-block-left{ background-color: #e6e6e6; padding: 10px 20px; margin-top: 20px; font-size: 16px; }
 .job-block-right{ margin-top: 5px; }
 
-.email-label{ padding: 10px 10px 10px 60px; background: url(../images/email.png) no-repeat left center ; }
-.fax-label{  padding: 10px 10px 10px 60px; background: url(../images/fax.png) no-repeat left center ; }
-.tel-label{ padding: 10px 10px 10px 60px; background: url(../images/tel.png) no-repeat left center ; }
-.address-label{  padding: 10px 10px 10px 60px; background: url(../images/address.png) no-repeat left center ; }
+.email-label{ padding: 10px 10px 10px 50px; background: url(../images/email.png) no-repeat left center ; }
+.fax-label{  padding: 10px 10px 10px 50px; background: url(../images/fax.png) no-repeat left center ; }
+.tel-label{ padding: 10px 10px 10px 50px; background: url(../images/tel.png) no-repeat left center ; }
+.address-label{  padding: 10px 10px 10px 50px; background: url(../images/address.png) no-repeat left center ; }
 
 
 
